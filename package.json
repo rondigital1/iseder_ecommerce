@@ -9,10 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0",
+    "@sanity/client": "^5.2.2",
+    "@sanity/image-url": "^1.0.2",
+    "@stripe/stripe-js": "^1.47.0",
+    "bootstrap": "^5.2.3",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
-    "next": "13.2.1",
+    "mdb-react-ui-kit": "^5.1.0",
+    "next": "^13.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.8.0",
+    "sanity": "^3.5.0",
+    "stripe": "^11.12.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6"
   }
 }
