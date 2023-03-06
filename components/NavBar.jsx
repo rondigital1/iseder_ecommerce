@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+
 import { AiOutlineShopping } from 'react-icons/ai';
 
 import { Cart } from './Cart';
@@ -10,9 +12,9 @@ export const NavBar = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style={{ zIndex: 2000 }}>
       <div class="container-fluid">
-        <a class="navbar-brand nav-link" target="_blank">
+        <Link class="navbar-brand nav-link" href='/'>
           <img src="/images/iseder_logo_small.webp" />
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -27,17 +29,15 @@ export const NavBar = () => {
         <div class="collapse navbar-collapse" id="navbarExample01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#intro" style={{ color: 'black', fontSize: '22px' }}>
+              <a class="nav-link" href="/" style={{ color: 'black', fontSize: '22px' }}>
                 home
               </a>
             </li>
+            <Link class="nav-link" href="/ProductCatalog" style={{ color: 'black', fontSize: '22px' }} passHref>
+              shop
+            </Link>
             <li class="nav-item">
-              <a class="nav-link" href="" rel="nofollow" target="_blank" style={{ color: 'black', fontSize: '22px' }}>
-                shop
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="" target="_blank" style={{ color: 'black', fontSize: '22px' }}>
+              <a class="nav-link" href="/collections" style={{ color: 'black', fontSize: '22px' }}>
                 collections
               </a>
             </li>

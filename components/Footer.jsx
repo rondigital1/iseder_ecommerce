@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
 export function Footer() {
@@ -29,11 +31,6 @@ export function Footer() {
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
                   contact iseder
                 </a>
               </p>
@@ -42,23 +39,23 @@ export function Footer() {
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
               <h5 className="text-uppercase fw-bold mb-4">Info</h5>
               <p>
+                <Link href="/about" className="text-reset">
+                  about us
+                </Link>
+              </p>
+              <p>
                 <a href="#!" className="text-reset">
-                  Pricing
+                  shipping and returns
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Settings
+                  privacy policy
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Help
+                  terms of service
                 </a>
               </p>
             </MDBCol>
